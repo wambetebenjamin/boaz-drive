@@ -1,0 +1,10 @@
+import type { Metadata } from 'next';
+import { LegalDocument } from '@/components/LegalDocument';
+export const metadata: Metadata = { title: 'Privacy policy' };
+export default function PrivacyPolicy() { return <LegalDocument title="Privacy policy" intro="Boaz Drive respects your privacy. This notice explains how we collect and use personal information when you browse our website or request a vehicle rental in Kenya." sections={[
+  { title: 'Information we collect', paragraphs: ['We collect information you provide when you make a booking, create an account, contact us, or request help. This can include your name, national ID or passport number, phone number, email address, driving licence details, trip dates, pickup information, and communications with our team.'] },
+  { title: 'How we use information', paragraphs: ['We use your information to arrange and manage rentals, verify eligibility, process booking requests, provide customer care, help protect our services, and meet legal or regulatory obligations. We only use information for purposes connected to the service you requested or another lawful basis.'] },
+  { title: 'Kenyan data protection', paragraphs: ['We handle personal data in accordance with the Data Protection Act, 2019 and applicable regulations. We take reasonable measures to keep personal data accurate, secure, and limited to what is needed for the stated purposes. You may ask to access, correct, object to, or request deletion of your personal data, subject to lawful retention requirements.'] },
+  { title: 'Sharing and retention', paragraphs: ['We share information only with service providers who help us operate bookings, payment requests, customer communications, or secure hosting. Those providers must protect information and use it only to provide their services. We keep records for as long as needed for the rental, customer support, and lawful record keeping.'] },
+  { title: 'Your choices and contact', paragraphs: ['You may contact us to ask about your information or make a data protection request. We may need to confirm your identity before responding. Contact our team at hello@boazdrive.co.ke.'] },
+]} />; }

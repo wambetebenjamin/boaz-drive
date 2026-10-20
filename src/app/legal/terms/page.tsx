@@ -1,0 +1,10 @@
+import type { Metadata } from 'next';
+import { LegalDocument } from '@/components/LegalDocument';
+export const metadata: Metadata = { title: 'Terms of service' };
+export default function Terms() { return <LegalDocument title="Terms of service" intro="These terms explain how vehicle rental requests with Boaz Drive work. A confirmed rental is subject to the written rental agreement and eligibility checks provided by our team." sections={[
+  { title: 'Bookings and eligibility', paragraphs: ['A booking request is not confirmed until Boaz Drive confirms availability, driver eligibility, payment arrangements, and handover details. Drivers must hold a valid driving licence and provide the requested identity information. Additional age, deposit, or vehicle requirements may apply and will be shared before confirmation.'] },
+  { title: 'Rates and payment', paragraphs: ['Prices shown are daily estimates in Kenyan shillings. The final quote may depend on rental dates, delivery details, and the vehicle selected. Payment is due as described in the written confirmation. Do not send payment to a personal number or account unless our team has verified it with you.'] },
+  { title: 'Vehicle care and road support', paragraphs: ['The driver is responsible for using the vehicle safely, following Kenyan road rules, and reporting accidents, damage, or mechanical concerns promptly. Rental vehicles are insured subject to the terms, exclusions, and excess set out in the rental agreement. Roadside support is available at the contact details shared at handover.'] },
+  { title: 'Changes and cancellation', paragraphs: ['Contact us as early as possible if you need to change or cancel a booking. A cancellation made more than 24 hours before pickup may be requested through your account. Any refund, fee, or change depends on the confirmed rental agreement and payment status.'] },
+  { title: 'Contact', paragraphs: ['These website details are a general summary and do not replace your signed rental agreement. For help, contact hello@boazdrive.co.ke or +254 112 272 061.'] },
+]} />; }
